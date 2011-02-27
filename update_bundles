@@ -3,7 +3,8 @@
 # http://tammersaleh.com/posts/the-modern-vim-config-with-pathogen
 
 git_bundles = [
-    "git://github.com/jimenezrick/vimerl.git",
+    #"git://github.com/jimenezrick/vimerl.git",
+    "git://github.com/tapichu/vimerl.git", # temporary, util pull request is merged
     "git://github.com/kevinw/pyflakes-vim.git",
     "git://github.com/mattn/gist-vim.git",
     "git://github.com/motemen/git-vim.git",
