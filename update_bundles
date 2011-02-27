@@ -3,8 +3,6 @@
 # http://tammersaleh.com/posts/the-modern-vim-config-with-pathogen
 
 git_bundles = [
-    #"git://github.com/jimenezrick/vimerl.git",
-    "git://github.com/tapichu/vimerl.git", # temporary, util pull request is merged
     "git://github.com/kevinw/pyflakes-vim.git",
     "git://github.com/mattn/gist-vim.git",
     "git://github.com/motemen/git-vim.git",
@@ -14,6 +12,8 @@ git_bundles = [
     "git://github.com/scrooloose/nerdcommenter.git",
     "git://github.com/sjl/gundo.vim.git",
     "git://github.com/sukima/xmledit.git",
+    "git://github.com/tapichu/Align.git", # "git://github.com/vim-scripts/Align.git",
+    "git://github.com/tapichu/vimerl.git", # "git://github.com/jimenezrick/vimerl.git",
     "git://github.com/timcharper/textile.vim.git",
     "git://github.com/tpope/vim-abolish",
     "git://github.com/tpope/vim-endwise.git",
@@ -23,7 +23,6 @@ git_bundles = [
     "git://github.com/tpope/vim-surround.git",
     "git://github.com/tpope/vim-vividchalk.git",
     "git://github.com/vim-ruby/vim-ruby.git",
-    #"git://github.com/vim-scripts/Align.git", need to change maps, clash with command-t
     "git://github.com/vim-scripts/AutoClose.git",
     "git://github.com/vim-scripts/closetag.vim.git",
     "git://github.com/vim-scripts/Decho.git",
@@ -82,8 +81,7 @@ vim_org_scripts.each do |name, script_id, script_type|
     local_file = File.join(name, script_type, "#{name}.vim")
     FileUtils.mkdir_p(File.dirname(local_file))
     File.open(local_file, "w") do |file|
-        file <<
-        open("http://www.vim.org/scripts/download_script.php?src_id=#{script_id}").read
+        file << open("http://www.vim.org/scripts/download_script.php?src_id=#{script_id}").read
     end
 end
 
