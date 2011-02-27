@@ -88,9 +88,7 @@ vim_org_scripts.each do |name, script_id, script_type|
 end
 
 # Build command-t
-commandt_dir = File.join(File.dirname(__FILE__), "command-t")
-FileUtils.cd(commandt_dir)
-
+FileUtils.cd("command-t")
 puts "  Building command-t"
 `rake make`
 
