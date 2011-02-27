@@ -40,8 +40,8 @@ autocmd FileType html,xml,xsl source ~/.vim/bundle/closetag.vim/plugin/closetag.
 autocmd BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
 " erlang
-let g:erlangCheckFile='~/.vim/bundle/vimerl/compiler/erlang_check_file.erl'
-let g:erlangCompletionFile='~/.vim/bundle/vimerl/autoload/erlang_completion.erl'
+let g:erlangCheckFile='~/.vim/bundle/vimerl/compiler/erlang_check.erl'
+let g:erlangCompleteFile='~/.vim/bundle/vimerl/autoload/erlang_complete.erl'
 let g:erlangCompletionGrep='zgrep'
 let g:erlangManPath='/usr/lib64/erlang/man'
 let g:erlangManSuffix='\.gz'
