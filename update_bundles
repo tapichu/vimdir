@@ -26,6 +26,7 @@ git_bundles = [
     #"git://github.com/vim-scripts/Align.git", need to change maps, clash with command-t
     "git://github.com/vim-scripts/AutoClose.git",
     "git://github.com/vim-scripts/closetag.vim.git",
+    "git://github.com/vim-scripts/Decho.git",
     "git://github.com/vim-scripts/django.vim.git",
     "git://github.com/vim-scripts/IndexedSearch.git",
     "git://github.com/vim-scripts/jQuery.git",
