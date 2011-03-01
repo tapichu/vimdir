@@ -39,6 +39,13 @@ autocmd FileType html,xml,xsl source ~/.vim/bundle/closetag.vim/plugin/closetag.
 " jquery - activate: ':setfiletype jquery'
 autocmd BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
+" ruby
+autocmd FileType ruby set autoindent shiftwidth=2 softtabstop=2 tabstop=2 expandtab
+let g:rubycomplete_buffer_loading=1
+let g:rubycomplete_classes_in_global=1
+let g:ruby_operators=1
+let g:ruby_space_errors=1
+
 " erlang
 let g:erlangCheckFile='~/.vim/bundle/vimerl/compiler/erlang_check.erl'
 let g:erlangCompleteFile='~/.vim/bundle/vimerl/autoload/erlang_complete.erl'
