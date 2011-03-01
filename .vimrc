@@ -24,6 +24,7 @@ colorscheme anotherdark
 " Gundo
 nnoremap <F5> :GundoToggle<CR>
 
+" omnicomplete
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType ruby set omnifunc=rubycomplete#Complete
@@ -31,11 +32,14 @@ autocmd FileType c set omnifunc=ccomplete#Complete
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+
 " Django templates
 autocmd FileType python set ft=python.django
 autocmd FileType html set ft=htmldjango.html
+
 " closetag
 autocmd FileType html,xml,xsl source ~/.vim/bundle/closetag.vim/plugin/closetag.vim
+
 " jquery - activate: ':setfiletype jquery'
 autocmd BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
@@ -50,6 +54,7 @@ let g:ruby_operators=1
 let g:ruby_space_errors=1
 
 " erlang
+autocmd FileType erlang set keywordprg=erl\ -man
 let g:erlangCheckFile='~/.vim/bundle/vimerl/compiler/erlang_check.erl'
 let g:erlangCompleteFile='~/.vim/bundle/vimerl/autoload/erlang_complete.erl'
 let g:erlangCompletionGrep='zgrep'
