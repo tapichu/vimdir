@@ -29,6 +29,7 @@ git_bundles = [
     "git://github.com/vim-scripts/django.vim.git",
     "git://github.com/vim-scripts/IndexedSearch.git",
     "git://github.com/vim-scripts/jQuery.git",
+    "git://github.com/vim-scripts/matchit.zip.git",
     "git://github.com/vim-scripts/molokai.git",
     "git://github.com/vim-scripts/Zenburn.git",
     "git://git.wincent.com/command-t.git",
