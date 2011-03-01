@@ -3,67 +3,69 @@
 # http://tammersaleh.com/posts/the-modern-vim-config-with-pathogen
 
 git_bundles = [
-    "git://github.com/kevinw/pyflakes-vim.git",
-    "git://github.com/mattn/gist-vim.git",
-    "git://github.com/motemen/git-vim.git",
-    "git://github.com/msanders/snipmate.vim.git",
-    "git://github.com/pangloss/vim-javascript.git",
-    "git://github.com/robhudson/snipmate_for_django.git",
-    "git://github.com/scrooloose/nerdcommenter.git",
-    "git://github.com/sjl/gundo.vim.git",
-    "git://github.com/sukima/xmledit.git",
-    "git://github.com/tapichu/Align.git", # "git://github.com/vim-scripts/Align.git",
-    "git://github.com/tapichu/vimerl.git", # "git://github.com/jimenezrick/vimerl.git",
-    "git://github.com/timcharper/textile.vim.git",
-    "git://github.com/tpope/vim-abolish",
-    "git://github.com/tpope/vim-endwise.git",
-    "git://github.com/tpope/vim-markdown.git",
-    "git://github.com/tpope/vim-repeat.git",
-    "git://github.com/tpope/vim-speeddating.git",
-    "git://github.com/tpope/vim-surround.git",
-    "git://github.com/tpope/vim-vividchalk.git",
-    "git://github.com/vim-ruby/vim-ruby.git",
-    "git://github.com/vim-scripts/AutoClose.git",
-    "git://github.com/vim-scripts/closetag.vim.git",
-    "git://github.com/vim-scripts/Decho.git",
-    "git://github.com/vim-scripts/django.vim.git",
-    "git://github.com/vim-scripts/IndexedSearch.git",
-    "git://github.com/vim-scripts/jQuery.git",
-    "git://github.com/vim-scripts/matchit.zip.git",
-    "git://github.com/vim-scripts/molokai.git",
-    "git://github.com/vim-scripts/Zenburn.git",
-    "git://git.wincent.com/command-t.git",
+  "git://github.com/kevinw/pyflakes-vim.git",
+  "git://github.com/mattn/gist-vim.git",
+  "git://github.com/motemen/git-vim.git",
+  "git://github.com/msanders/snipmate.vim.git",
+  "git://github.com/pangloss/vim-javascript.git",
+  "git://github.com/robhudson/snipmate_for_django.git",
+  "git://github.com/scrooloose/nerdcommenter.git",
+  "git://github.com/sjl/gundo.vim.git",
+  "git://github.com/sukima/xmledit.git",
+  "git://github.com/tapichu/Align.git", # "git://github.com/vim-scripts/Align.git",
+  "git://github.com/tapichu/vimerl.git", # "git://github.com/jimenezrick/vimerl.git",
+  "git://github.com/timcharper/textile.vim.git",
+  "git://github.com/tpope/vim-abolish",
+  "git://github.com/tpope/vim-endwise.git",
+  "git://github.com/tpope/vim-markdown.git",
+  "git://github.com/tpope/vim-repeat.git",
+  "git://github.com/tpope/vim-speeddating.git",
+  "git://github.com/tpope/vim-surround.git",
+  "git://github.com/tpope/vim-vividchalk.git",
+  "git://github.com/vim-ruby/vim-ruby.git",
+  "git://github.com/vim-scripts/AutoClose.git",
+  "git://github.com/vim-scripts/closetag.vim.git",
+  "git://github.com/vim-scripts/Decho.git",
+  "git://github.com/vim-scripts/django.vim.git",
+  "git://github.com/vim-scripts/IndexedSearch.git",
+  "git://github.com/vim-scripts/jQuery.git",
+  "git://github.com/vim-scripts/matchit.zip.git",
+  "git://github.com/vim-scripts/molokai.git",
+  "git://github.com/vim-scripts/Zenburn.git",
+  "git://git.wincent.com/command-t.git",
 ]
 
 vim_org_scripts = [
-    ["anotherdark", "4449", "colors"], # http://www.vim.org/scripts/script.php?script_id=1308
+  ["anotherdark", "4449", "colors"], # http://www.vim.org/scripts/script.php?script_id=1308
 ]
 
 # Other plugins
 # * Git
-#       git://github.com/tpope/vim-fugitive.git
-#       git://github.com/tpope/vim-git.git
+#     git://github.com/tpope/vim-fugitive.git
+#     git://github.com/tpope/vim-git.git
 # * File explorer / navigation
-#       git://github.com/scrooloose/nerdtree.git
-#       git://github.com/vim-scripts/project.tar.gz
+#     git://github.com/scrooloose/nerdtree.git
+#     git://github.com/vim-scripts/project.tar.gz
 # * Comments
-#       git://github.com/tsaleh/vim-tcomment.git
+#     git://github.com/tsaleh/vim-tcomment.git
 # * Autocomplete
-#       git://github.com/ervandew/supertab.git
+#     git://github.com/ervandew/supertab.git
+# * Python
+#     git://github.com/fs111/pydoc.vim.git
 # * Ruby
-#       git://github.com/tsaleh/vim-shoulda.git
-#       git://github.com/tpope/vim-rails.git
-#       git://github.com/tpope/vim-cucumber.git
-#       git://github.com/astashov/vim-ruby-debugger.git
+#     git://github.com/tsaleh/vim-shoulda.git
+#     git://github.com/tpope/vim-rails.git
+#     git://github.com/tpope/vim-cucumber.git
+#     git://github.com/astashov/vim-ruby-debugger.git
 # * Markup
-#       git://github.com/tpope/vim-haml.git
+#     git://github.com/tpope/vim-haml.git
 
 require 'fileutils'
 require 'open-uri'
 
 bundles_dir = File.join(File.dirname(__FILE__), "bundle")
 if not File.exists?(bundles_dir)
-    FileUtils.mkdir(bundles_dir)
+  FileUtils.mkdir(bundles_dir)
 end
 FileUtils.cd(bundles_dir)
 
@@ -71,19 +73,19 @@ puts "Trashing everything (lookout!)"
 Dir["*"].each {|d| FileUtils.rm_rf d }
 
 git_bundles.each do |url|
-    dir = url.split('/').last.sub(/\.git$/, '')
-    puts "  Unpacking #{url} into #{dir}"
-    `git clone --recursive #{url} #{dir}`
-    FileUtils.rm_rf(File.join(dir, ".git"))
+  dir = url.split('/').last.sub(/\.git$/, '')
+  puts "  Unpacking #{url} into #{dir}"
+  `git clone --recursive #{url} #{dir}`
+  FileUtils.rm_rf(File.join(dir, ".git"))
 end
 
 vim_org_scripts.each do |name, script_id, script_type|
-    puts "  Downloading #{name}"
-    local_file = File.join(name, script_type, "#{name}.vim")
-    FileUtils.mkdir_p(File.dirname(local_file))
-    File.open(local_file, "w") do |file|
-        file << open("http://www.vim.org/scripts/download_script.php?src_id=#{script_id}").read
-    end
+  puts "  Downloading #{name}"
+  local_file = File.join(name, script_type, "#{name}.vim")
+  FileUtils.mkdir_p(File.dirname(local_file))
+  File.open(local_file, "w") do |file|
+    file << open("http://www.vim.org/scripts/download_script.php?src_id=#{script_id}").read
+  end
 end
 
 # Build command-t
