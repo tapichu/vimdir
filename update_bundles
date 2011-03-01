@@ -88,6 +88,13 @@ vim_org_scripts.each do |name, script_id, script_type|
   end
 end
 
+# xmledit for other filetypes
+xmledit_filetypes = ["html", "xhtml", "jsp", "php"]
+xmledit_filetypes.each do |filetype|
+  FileUtils.ln_s(File.expand_path("./xmledit/ftplugin/xml.vim"),
+                 File.expand_path("./xmledit/ftplugin/#{filetype}.vim"))
+end
+
 # Build command-t
 FileUtils.cd("command-t")
 puts "  Building command-t"
