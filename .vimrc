@@ -61,7 +61,6 @@ let g:ruby_operators=1
 let g:ruby_space_errors=1
 
 " erlang
-autocmd FileType erlang set keywordprg=erl\ -man
 let g:erlangCheckFile='~/.vim/bundle/vimerl/compiler/erlang_check.erl'
 let g:erlangCompleteFile='~/.vim/bundle/vimerl/autoload/erlang_complete.erl'
 let g:erlangCompletionGrep='zgrep'
