@@ -42,8 +42,10 @@ bundles_dir = File.join(File.dirname(__FILE__), "bundle")
 FileUtils.cd(bundles_dir)
 
 vim_org_scripts.each do |name, script_id, script_type|
-  puts "  Removing #{name}"
-  FileUtils.rm_rf name
+  if File.exist? name
+    puts "  Removing #{name}"
+    FileUtils.rm_rf name
+  end
   puts "  Downloading #{name}"
   local_file = File.join(name, script_type, "#{name}.vim")
   FileUtils.mkdir_p(File.dirname(local_file))
