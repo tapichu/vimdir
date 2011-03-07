@@ -11,10 +11,10 @@ filetype indent on
 
 " set smartindent
 set autoindent
-set tabstop=4
-set softtabstop=4
 set expandtab
 set shiftwidth=4
+set softtabstop=4
+set tabstop=4
 set textwidth=80
 set nu!
 
@@ -32,6 +32,7 @@ autocmd FileType c set omnifunc=ccomplete#Complete
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+
 " <C-Space> -> try omnicoplete, fallback to <C-n>
 inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
 \ "\<lt>C-n>" :
@@ -54,7 +55,6 @@ autocmd BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 autocmd BufRead,BufNewFile,FileReadPost *.py source ~/.vim/python
 
 " ruby
-autocmd FileType ruby set autoindent shiftwidth=2 softtabstop=2 tabstop=2 expandtab
 let g:rubycomplete_buffer_loading=1
 let g:rubycomplete_classes_in_global=1
 let g:ruby_operators=1
