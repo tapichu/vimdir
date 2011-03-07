@@ -28,7 +28,7 @@ vim_org_scripts = [
 ]
 
 # xmledit for other filetypes
-xmledit_filetypes = ["ant", "html", "sgml", "xhtml"]
+xmledit_filetypes = ["ant", "html", "jsp", "php", "sgml", "xhtml"]
 
 require 'fileutils'
 require 'open-uri'
