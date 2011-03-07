@@ -46,7 +46,7 @@ autocmd FileType python set ft=python.django
 autocmd FileType html set ft=htmldjango.html
 
 " closetag
-autocmd FileType html,xml,xsl source ~/.vim/bundle/closetag.vim/plugin/closetag.vim
+autocmd FileType html,xml,xsl source ~/.vim/bundle/closetag-vim/plugin/closetag.vim
 
 " jquery - activate: ':setfiletype jquery'
 autocmd BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
