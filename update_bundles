@@ -36,8 +36,7 @@ require 'open-uri'
 puts "Updating bundles"
 
 puts "  Updating submodules"
-`git submodule init`
-`git submodule update --recursive`
+`git submodule update --init --recursive`
 
 bundles_dir = File.join(File.dirname(__FILE__), "bundle")
 FileUtils.cd(bundles_dir)
