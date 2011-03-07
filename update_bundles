@@ -2,43 +2,6 @@
 
 # http://tammersaleh.com/posts/the-modern-vim-config-with-pathogen
 
-git_bundles = [
-  "git://github.com/kevinw/pyflakes-vim.git",
-  "git://github.com/mattn/gist-vim.git",
-  "git://github.com/motemen/git-vim.git",
-  "git://github.com/msanders/snipmate.vim.git",
-  "git://github.com/pangloss/vim-javascript.git",
-  "git://github.com/robhudson/snipmate_for_django.git",
-  "git://github.com/scrooloose/nerdcommenter.git",
-  "git://github.com/sjl/gundo.vim.git",
-  "git://github.com/sukima/xmledit.git",
-  "git://github.com/tapichu/Align.git", # "git://github.com/vim-scripts/Align.git",
-  "git://github.com/tapichu/vimerl.git", # "git://github.com/jimenezrick/vimerl.git",
-  "git://github.com/timcharper/textile.vim.git",
-  "git://github.com/tpope/vim-abolish",
-  "git://github.com/tpope/vim-endwise.git",
-  "git://github.com/tpope/vim-markdown.git",
-  "git://github.com/tpope/vim-repeat.git",
-  "git://github.com/tpope/vim-speeddating.git",
-  "git://github.com/tpope/vim-surround.git",
-  "git://github.com/tpope/vim-vividchalk.git",
-  "git://github.com/vim-ruby/vim-ruby.git",
-  "git://github.com/vim-scripts/AutoClose.git",
-  "git://github.com/vim-scripts/closetag.vim.git",
-  "git://github.com/vim-scripts/Decho.git",
-  "git://github.com/vim-scripts/django.vim.git",
-  "git://github.com/vim-scripts/IndexedSearch.git",
-  "git://github.com/vim-scripts/jQuery.git",
-  "git://github.com/vim-scripts/matchit.zip.git",
-  "git://github.com/vim-scripts/molokai.git",
-  "git://github.com/vim-scripts/Zenburn.git",
-  "git://git.wincent.com/command-t.git",
-]
-
-vim_org_scripts = [
-  ["anotherdark", "4449", "colors"], # http://www.vim.org/scripts/script.php?script_id=1308
-]
-
 # Other plugins
 # * Git
 #     git://github.com/tpope/vim-fugitive.git
@@ -60,26 +23,28 @@ vim_org_scripts = [
 # * Markup
 #     git://github.com/tpope/vim-haml.git
 
+vim_org_scripts = [
+  ["anotherdark", "4449", "colors"], # http://www.vim.org/scripts/script.php?script_id=1308
+]
+
+# xmledit for other filetypes
+xmledit_filetypes = ["ant", "html", "sgml", "xhtml"]
+
 require 'fileutils'
 require 'open-uri'
 
+puts "Updating bundles"
+
+puts "  Updating submodules"
+`git submodule init`
+`git submodule update --recursive`
+
 bundles_dir = File.join(File.dirname(__FILE__), "bundle")
-if not File.exists?(bundles_dir)
-  FileUtils.mkdir(bundles_dir)
-end
 FileUtils.cd(bundles_dir)
 
-puts "Trashing everything (lookout!)"
-Dir["*"].each {|d| FileUtils.rm_rf d }
-
-git_bundles.each do |url|
-  dir = url.split('/').last.sub(/\.git$/, '')
-  puts "  Unpacking #{url} into #{dir}"
-  `git clone --recursive #{url} #{dir}`
-  FileUtils.rm_rf(File.join(dir, ".git"))
-end
-
 vim_org_scripts.each do |name, script_id, script_type|
+  puts "  Removing #{name}"
+  FileUtils.rm_rf name
   puts "  Downloading #{name}"
   local_file = File.join(name, script_type, "#{name}.vim")
   FileUtils.mkdir_p(File.dirname(local_file))
@@ -88,11 +53,12 @@ vim_org_scripts.each do |name, script_id, script_type|
   end
 end
 
-# xmledit for other filetypes
-xmledit_filetypes = ["html", "xhtml", "jsp", "php"]
+puts "  Xmledit for other filetypes"
 xmledit_filetypes.each do |filetype|
-  FileUtils.ln_s(File.expand_path("./xmledit/ftplugin/xml.vim"),
-                 File.expand_path("./xmledit/ftplugin/#{filetype}.vim"))
+  target = File.expand_path("./xmledit/ftplugin/#{filetype}.vim")
+  if not File.exist? target
+    FileUtils.ln_s(File.expand_path("./xmledit/ftplugin/xml.vim"), target)
+  end
 end
 
 # Build command-t
