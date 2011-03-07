@@ -33,7 +33,7 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 
-" <C-Space> -> try omnicoplete, fallback to <C-n>
+" <C-Space> -> try omnicomplete, fallback to <C-n>
 inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
 \ "\<lt>C-n>" :
 \ "\<lt>C-x>\<lt>C-o><c-r>=pumvisible() ?" .
@@ -50,9 +50,6 @@ autocmd FileType html,xml,xsl source ~/.vim/bundle/closetag.vim/plugin/closetag.
 
 " jquery - activate: ':setfiletype jquery'
 autocmd BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
-
-" python
-autocmd BufRead,BufNewFile,FileReadPost *.py source ~/.vim/python
 
 " ruby
 let g:rubycomplete_buffer_loading=1

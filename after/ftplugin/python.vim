@@ -1,5 +1,5 @@
 " K command
-autocmd FileType python set keywordprg=pydoc
+setlocal keywordprg=pydoc
 
 " Jump to import statements
 python << EOF
