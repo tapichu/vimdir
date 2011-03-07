@@ -51,7 +51,7 @@ autocmd FileType html,xml,xsl source ~/.vim/bundle/closetag.vim/plugin/closetag.
 autocmd BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
 " python
-autocmd FileType python set keywordprg=pydoc
+autocmd BufRead,BufNewFile,FileReadPost *.py source ~/.vim/python
 
 " ruby
 autocmd FileType ruby set autoindent shiftwidth=2 softtabstop=2 tabstop=2 expandtab
