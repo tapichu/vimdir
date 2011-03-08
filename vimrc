@@ -16,7 +16,8 @@ set shiftwidth=4
 set softtabstop=4
 set tabstop=4
 set textwidth=80
-set nu!
+set number
+set incsearch
 
 " colorscheme default
 colorscheme anotherdark
