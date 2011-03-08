@@ -1,6 +1,6 @@
 # Vimdir
 
-This is my .vim directory.
+This is my Vim configuration.
 
 It uses **pathogen** and **git submodules**. This makes it very simple to add,
 remove and update plugins.
@@ -12,8 +12,8 @@ It's also really simple to setup.
 1. Clone the repository:
     * <code>git clone [repo url] ~/.vim</code>
 2. Link the vimrc and gvimrc files:
-    * <code>ln -s ~/.vim/.vimrc ~/.vimrc</code>
-    * <code>ln -s ~/.vim/.gvimrc ~/.gvimrc</code>
+    * <code>ln -s ~/.vim/vimrc ~/.vimrc</code>
+    * <code>ln -s ~/.vim/gvimrc ~/.gvimrc</code>
 3. Run the *update_bundles* script:
     * <code>./update_bundles</code>
 
