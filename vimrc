@@ -40,7 +40,6 @@ inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
 \ "\<lt>C-x>\<lt>C-o><c-r>=pumvisible() ?" .
 \ "\"\\<lt>c-n>\\<lt>c-p>\" :" .
 \ "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
-imap <C-@> <C-Space>
 
 " Django templates
 autocmd FileType python set ft=python.django
