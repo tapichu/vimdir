@@ -45,6 +45,9 @@ inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
 autocmd FileType python set ft=python.django
 autocmd FileType html set ft=htmldjango.html
 
+" Maven projects
+nnoremap mvn :set wildignore+=target/**,*/**/target/**,*.class<CR>:CommandTFlush<CR>
+
 " closetag
 autocmd FileType html,xml,xsl source ~/.vim/bundle/closetag-vim/plugin/closetag.vim
 
