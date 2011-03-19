@@ -33,6 +33,7 @@ It's also really simple to setup.
             * pyflakes (needs a python interpreter)
         * Ruby
             * vim-ruby
+            * vim-ruby-debugger (needs ruby-debug-ide gem)
     * Fromatting, editing, etc.
         * align
         * autoclose
