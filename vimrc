@@ -19,6 +19,10 @@ set textwidth=80
 set number
 set incsearch
 
+" default completion
+set wildmenu
+set wildmode=longest:full
+
 " colorscheme default
 colorscheme anotherdark
 
