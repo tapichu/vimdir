@@ -77,4 +77,7 @@ let g:gist_show_privates=1
 autocmd FileType c,cpp,erlang,java,javascript,python,ruby autocmd BufWritePre
     \ <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
 
+set nowildmenu
+set wildmode=list:longest
+
 " ~/.vimrc ends here
