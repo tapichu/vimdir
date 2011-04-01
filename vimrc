@@ -80,8 +80,7 @@ let g:gist_clip_command='xclip -selection clipboard'
 let g:gist_detect_filetype=1
 let g:gist_show_privates=1
 
-" Automatically remove trailing whitespace on save for these file types.
-autocmd FileType c,cpp,erlang,java,javascript,python,ruby autocmd BufWritePre
-    \ <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
+" Automatically remove trailing whitespace
+nnoremap <Leader>rs :%s/\s\+$//g<CR>
 
 " ~/.vimrc ends here
