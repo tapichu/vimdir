@@ -18,6 +18,9 @@ set tabstop=4
 set textwidth=80
 set number
 set incsearch
+" Switch quickly between different indentations
+nnoremap 2sp :set sw=2 sts=2 ts=2<CR>
+nnoremap 4sp :set sw=4 sts=4 ts=4<CR>
 
 " default completion
 set wildmenu
