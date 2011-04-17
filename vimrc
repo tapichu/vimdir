@@ -6,6 +6,7 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 " filetypes
+syntax on
 filetype plugin on
 filetype indent on
 
