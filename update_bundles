@@ -21,6 +21,8 @@
 #     git://github.com/tpope/vim-cucumber.git
 # * Markup
 #     git://github.com/tpope/vim-haml.git
+# * Scala
+#     https://github.com/bdd/vim-scala
 
 vim_org_scripts = [
   ["anotherdark", "4449", "colors"], # http://www.vim.org/scripts/script.php?script_id=1308

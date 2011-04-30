@@ -34,6 +34,8 @@ It's also really simple to setup.
         * Ruby
             * vim-ruby
             * vim-ruby-debugger (needs ruby-debug-ide gem)
+        * Scala
+            * vim-scala
     * Fromatting, editing, etc.
         * align
         * autoclose
@@ -65,4 +67,3 @@ It's also really simple to setup.
     * molokai
     * vim-vividchalk
     * zenburn
-
