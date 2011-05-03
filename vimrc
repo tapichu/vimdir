@@ -19,6 +19,7 @@ set tabstop=4
 set textwidth=80
 set number
 set incsearch
+set sessionoptions=blank,buffers,curdir,folds,globals,help,localoptions,options,resize,tabpages,winsize,winpos
 " Switch quickly between different indentations
 nnoremap 2sp :set sw=2 sts=2 ts=2<CR>
 nnoremap 4sp :set sw=4 sts=4 ts=4<CR>
