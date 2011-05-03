@@ -73,9 +73,7 @@ let g:ruby_space_errors=1
 let g:erlangHighlightBIFs=1
 let g:erlangCheckFile='~/.vim/bundle/vimerl/compiler/erlang_check.erl'
 let g:erlangCompleteFile='~/.vim/bundle/vimerl/autoload/erlang_complete.erl'
-let g:erlangCompletionGrep='zgrep'
-let g:erlangManPath='/usr/lib64/erlang/man'
-let g:erlangManSuffix='\.gz'
+let g:erlangManPath='/usr/lib/erlang/man'
 
 " gist
 let g:gist_clip_command='xclip -selection clipboard'
