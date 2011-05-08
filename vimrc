@@ -31,6 +31,9 @@ set wildmode=longest:full
 " colorscheme default
 colorscheme anotherdark
 
+" <Esc> mapping
+imap jk <Esc>
+
 " Gundo
 nnoremap <F5> :GundoToggle<CR>
 
