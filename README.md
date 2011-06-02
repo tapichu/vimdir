@@ -38,6 +38,7 @@ It's also really simple to setup.
             * vim-scala
     * Exuberant Ctags
         * AutoTag
+        * taglist
     * Fromatting, editing, etc.
         * align
         * autoclose

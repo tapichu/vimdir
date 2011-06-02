@@ -133,3 +133,7 @@
 	path = bundle/AutoTag
 	url = git://github.com/vim-scripts/AutoTag.git
 	ignore = untracked
+[submodule "bundle/taglist-vim"]
+	path = bundle/taglist-vim
+	url = git://github.com/vim-scripts/taglist.vim.git
+	ignore = untracked

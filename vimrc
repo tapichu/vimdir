@@ -83,6 +83,9 @@ let g:gist_clip_command='xclip -selection clipboard'
 let g:gist_detect_filetype=1
 let g:gist_show_privates=1
 
+" taglist
+map <F4> :TlistToggle<CR>
+
 " Automatically remove trailing whitespace
 nnoremap <Leader>rs :%s/\s\+$//g<CR>
 
