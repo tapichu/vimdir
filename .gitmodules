@@ -129,3 +129,7 @@
 	path = bundle/vim-scala
 	url = git://github.com/ewiplayer/vim-scala.git
 	ignore = untracked
+[submodule "bundle/AutoTag"]
+	path = bundle/AutoTag
+	url = git://github.com/vim-scripts/AutoTag.git
+	ignore = untracked

@@ -36,6 +36,8 @@ It's also really simple to setup.
             * vim-ruby-debugger (needs ruby-debug-ide gem)
         * Scala
             * vim-scala
+    * Exuberant Ctags
+        * AutoTag
     * Fromatting, editing, etc.
         * align
         * autoclose
