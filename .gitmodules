@@ -137,3 +137,7 @@
 	path = bundle/taglist-vim
 	url = git://github.com/vim-scripts/taglist.vim.git
 	ignore = untracked
+[submodule "bundle/sqlutilities"]
+	path = bundle/sqlutilities
+	url = git://github.com/vim-scripts/SQLUtilities.git
+	ignore = untracked

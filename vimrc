@@ -86,6 +86,9 @@ let g:gist_show_privates=1
 " taglist
 map <F4> :TlistToggle<CR>
 
+" SQLUtilities
+let g:sqlutil_align_comma=1
+
 " Automatically remove trailing whitespace
 nnoremap <Leader>rs :%s/\s\+$//g<CR>
 

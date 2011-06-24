@@ -47,6 +47,7 @@ It's also really simple to setup.
         * Snippets
             * snipmate-vim
             * snipmate-django
+        * SQLUtilities
         * vim-endwise
         * vim-surround
     * Markup
