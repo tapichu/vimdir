@@ -69,5 +69,6 @@ It's also really simple to setup.
 * Color schemes
     * anotherdark
     * molokai
+    * [solarized](http://ethanschoonover.com/solarized)
     * vim-vividchalk
     * zenburn
