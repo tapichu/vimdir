@@ -66,6 +66,9 @@ autocmd FileType html,xml,xsl source ~/.vim/bundle/closetag-vim/plugin/closetag.
 " jquery - activate: ':setfiletype jquery'
 autocmd BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
+" Vagrant and Puppet
+autocmd BufRead,BufNewFile *.pp,Vagrantfile set ft=ruby
+
 " ruby
 let g:rubycomplete_buffer_loading=1
 let g:rubycomplete_classes_in_global=1
