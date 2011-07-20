@@ -1,8 +1,8 @@
 "colorscheme desert
-"colorscheme molokai
-let g:solarized_contrast="hight"
-set background=light
-colorscheme solarized
+colorscheme molokai
+"let g:solarized_contrast="hight"
+"set background=light
+"colorscheme solarized
 
 set guifont=Droid\ Sans\ Mono\ 11.
 set guioptions-=T
