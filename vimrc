@@ -1,14 +1,11 @@
 " ~/.vimrc (configuration file for vim only)
 
 " pathogen
-filetype off
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+call pathogen#infect()
 
 " filetypes
 syntax on
-filetype plugin on
-filetype indent on
+filetype plugin indent on
 
 " set smartindent
 set autoindent
