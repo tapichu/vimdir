@@ -141,3 +141,7 @@
 	path = bundle/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
 	ignore = untracked
+[submodule "bundle/vim-scala"]
+	path = bundle/vim-scala
+	url = git://github.com/muhlig/vim-scala.git
+	ignore = untracked
