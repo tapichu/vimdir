@@ -73,8 +73,7 @@ let g:ruby_operators=1
 let g:ruby_space_errors=1
 
 " erlang
-let g:erlangHighlightBIFs=1
-let g:erlangManPath='/usr/lib/erlang/man'
+let g:erlang_highlight_bif=1
 
 " gist
 let g:gist_clip_command='xclip -selection clipboard'
