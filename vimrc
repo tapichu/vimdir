@@ -75,6 +75,10 @@ let g:ruby_space_errors=1
 " erlang
 let g:erlang_highlight_bif=1
 
+" eclim
+" Don't change to the current file's project directory before executing (ant, maven)
+let g:EclimMakeLCD=0
+
 " gist
 let g:gist_clip_command='xclip -selection clipboard'
 let g:gist_detect_filetype=1
