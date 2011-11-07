@@ -12,5 +12,5 @@ nnoremap <silent> <buffer> <cr> :JavaSearchContext<cr>
 nnoremap <silent> <buffer> <leader>mc :Mvn compile<cr>
 nnoremap <silent> <buffer> <leader>mcc :Mvn clean compile -DskipTests -DskipITs<cr>
 nnoremap <silent> <buffer> <leader>mcct :Mvn clean compile<cr>
-nnoremap <silent> <buffer> <leader>mvci :Mvn clean install -DskipTests -DskipITs<cr>
-nnoremap <silent> <buffer> <leader>mvcp :Mvn clean package -DskipTests -DskipITs<cr>
+nnoremap <silent> <buffer> <leader>mci :Mvn clean install -DskipTests -DskipITs<cr>
+nnoremap <silent> <buffer> <leader>mcp :Mvn clean package -DskipTests -DskipITs<cr>
