@@ -66,6 +66,10 @@ autocmd BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 " Vagrant and Puppet
 autocmd BufRead,BufNewFile *.pp,Vagrantfile set ft=ruby
 
+" eclim
+let g:EclimJavascriptValidate=0
+let g:EclimXmlValidate=0
+
 " ruby
 let g:rubycomplete_buffer_loading=1
 let g:rubycomplete_classes_in_global=1
