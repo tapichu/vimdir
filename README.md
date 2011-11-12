@@ -34,9 +34,10 @@ It's also really simple to setup.
             * django-vim
             * pyflakes (needs a python interpreter)
         * Ruby
+            * vim-rails
             * vim-ruby
             * vim-ruby-debugger (needs ruby-debug-ide gem)
-            * vim-rails
+            * vim-rvm
         * Scala
             * vim-scala
     * Exuberant Ctags
