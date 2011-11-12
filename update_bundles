@@ -17,7 +17,6 @@
 #     git://github.com/fs111/pydoc.vim.git
 # * Ruby
 #     git://github.com/tsaleh/vim-shoulda.git
-#     git://github.com/tpope/vim-rails.git
 #     git://github.com/tpope/vim-cucumber.git
 # * Markup
 #     git://github.com/tpope/vim-haml.git
