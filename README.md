@@ -23,6 +23,8 @@ It's also really simple to setup.
     * command-t (needs ruby and gcc but it's totally worth it)
 * Programming:
     * Language specific:
+        * Clojure
+            * vimclojure
         * CoffeeScript
             * vim-coffee-script
         * Erlang

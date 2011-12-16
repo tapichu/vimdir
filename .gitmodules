@@ -157,3 +157,7 @@
 	path = bundle/vim-rvm
 	url = git://github.com/tpope/vim-rvm.git
 	ignore = untracked
+[submodule "bundle/vimclojure"]
+	path = bundle/vimclojure
+	url = git://github.com/vim-scripts/VimClojure.git
+	ignore = untracked
