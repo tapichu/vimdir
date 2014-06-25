@@ -93,4 +93,7 @@ let g:sqlutil_align_comma=1
 " Automatically remove trailing whitespace
 nnoremap <Leader>rs :%s/\s\+$//g<CR>
 
+set nowildmenu
+set wildmode=list:longest
+
 " ~/.vimrc ends here
